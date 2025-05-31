@@ -1,4 +1,3 @@
-// app/components/FormPreview.tsx
 import { useFormStore } from "~/store/useFormStore";
 import { useState } from "react";
 

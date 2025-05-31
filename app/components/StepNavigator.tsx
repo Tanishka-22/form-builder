@@ -54,7 +54,7 @@ export function StepNavigation() {
 
   return (
     <div className="space-y-4">
-      {/* Progress Bar */}
+     
       <div className="flex items-center space-x-2">
         {steps.map((_, index) => (
           <div
@@ -66,7 +66,7 @@ export function StepNavigation() {
         ))}
       </div>
 
-      {/* Fields */}
+    
       {currentStepFields?.map((field) => (
         <div key={field!.id}>
           <label className="block font-medium">
@@ -88,7 +88,6 @@ export function StepNavigation() {
         </div>
       ))}
 
-      {/* Navigation Buttons */}
       <div className="flex justify-between mt-4">
         {currentStep > 0 && (
           <button

@@ -1,4 +1,3 @@
-// app/components/FieldConfigPanel.tsx
 import { useFormStore, Field } from "~/store/useFormStore";
 import { useState } from "react";
 

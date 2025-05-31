@@ -6,7 +6,7 @@ import { BuilderCanvas } from "~/components/BuilderCanvas";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Form-Builder" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
