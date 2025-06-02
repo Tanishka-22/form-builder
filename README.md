@@ -1,40 +1,67 @@
-# Welcome to Remix!
+# Form Builder
 
-- 📖 [Remix docs](https://remix.run/docs)
+A simple form builder app built with [Remix](https://remix.run/) and [Tailwind CSS](https://tailwindcss.com/) that supports light and dark themes.
 
-## Development
+## Features
 
-Run the dev server:
+- Drag-and-drop form field builder
+- Field configuration panel
+- Live form preview
+- Save form as JSON, CSV, or TXT
+- Light/Dark theme toggle (remembers user preference)
+- Responsive design
 
-```shellscript
-npm run dev
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or newer recommended)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/form-builder.git
+   cd form-builder
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Usage
+
+- Use the left panel to add fields to your form.
+- Click on a field to configure its properties.
+- Preview your form live as you build.
+- Use the "Toggle Theme" button in the top-right to switch between light and dark mode.
+- Save your form in various formats using the provided buttons.
+
+## Customization
+
+- **Tailwind CSS**: Edit `app/tailwind.css` and `tailwind.config.js` to customize styles.
+- **Theme**: The theme toggle uses Tailwind's `dark:` variants and stores the user's preference in `localStorage`.
+
+## Project Structure
+
+```
+app/
+  components/        # React components for builder, preview, etc.
+  routes/            # Remix routes
+  tailwind.css       # Tailwind CSS entrypoint
+  root.tsx           # Main app layout and theme logic
+tailwind.config.js   # Tailwind configuration
 ```
 
-## Deployment
+## License
 
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+MIT
